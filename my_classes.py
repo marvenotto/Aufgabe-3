@@ -1,10 +1,13 @@
 
 class Subject:
-    def __init__(self, subject_id, gender, age, resting_hr):
+    def __init__(self, subject_id, gender, age, resting_hr, name=None, weight=None, height=None):
         self.subject_id = subject_id
         self.gender = gender
         self.age = age
         self.resting_hr = resting_hr
+        self.name = name
+        self.weight = weight
+        self.height = height
 
     def estimate_max_hr(self):
         return 220 - self.age
@@ -20,3 +23,6 @@ class Experiment:
         self.date = date
         self.subject = subject
         self.supervisor = supervisor
+
+
+        

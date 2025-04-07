@@ -1,11 +1,20 @@
+
 from my_classes import Subject, Supervisor, Experiment
 
-subject1 = Subject("S01", "m", 25, 60)
+if __name__ == "__main__":
+    # Jetzt auch "resting_hr" und andere Attribute übergeben
+    subject = Subject(subject_id="S1", gender="male", age=21, resting_hr=60, name="Simon Otto", weight=70, height=175)
+    supervisor = Supervisor(name="Linus Maurer", email="linus@maurer.com")
 
-supervisor1 = Supervisor("Dr. Müller", "mueller@example.com")
+    experiment = Experiment(experiment_id="H1", date="2025-03-24", supervisor=supervisor, subject=subject)
 
-experiment1 = Experiment("EXP001", "2025-04-07", subject1, supervisor1)
+    print("Maximale Herzfrequenz von", subject.name, "ist:", subject.estimate_max_hr())
 
-print(f"Subject ID: {subject1.subject_id}")
-print(f"Geschätzte maximale Herzfrequenz: {subject1.estimate_max_hr()}")
-print(f"Supervisor: {experiment1.supervisor.name}")
+    print("\nExperiment-Daten:")
+    print(f"Experiment-ID: {experiment.experiment_id}")
+    print(f"Datum des Experiments: {experiment.date}")
+    print(f"Supervisor: {experiment.supervisor.name}")
+    print(f"Subject: {experiment.subject.name}")
+
+
+
