@@ -4,7 +4,7 @@ class Person:
     def __init__(self, name, gender, birthdate):
         self.name = name
         self.gender = gender
-        self.__birthdate = birthdate  # privates Attribut
+        self.__birthdate = birthdate  
 
     def calculate_age(self):
         today = datetime.today()
