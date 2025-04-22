@@ -1,0 +1,15 @@
+[project]
+name = "nstallieren"
+version = "pdm run flask --app main run"
+description = "Default template for PDM package"
+authors = [
+    {name = "Marven Otto", email = "om4326@mci4me.at"},
+]
+dependencies = ["flask>=3.1.0"]
+requires-python = "==3.13.*"
+readme = "README.md"
+license = {text = "MIT"}
+
+
+[tool.pdm]
+distribution = false

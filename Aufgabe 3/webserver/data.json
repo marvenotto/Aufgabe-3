@@ -1,0 +1,8 @@
+{
+  "Simon": {
+    "name": "Simon",
+    "gender": "male",
+    "birthdate": "2003-05-15",
+    "email": "simon@neu.de"
+  }
+}
